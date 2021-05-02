@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numbers Animation</title>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tuturials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--The <SCRIPT> tags are processed as they are encountered. -->
+    <style>
+
+    	
+
+        button, canvas .displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+      
+</style>
+
+    <script class="jsnumbDisplay" src="numbers.js"></script>
+    <script class="jsnumbDisplay" src="animation.js"></script>
+
+</head>
+
+<body>
+<div id="scene" style = "text-align:center;" class="jsnumbDisplay">
+  
+    <canvas id="myCanvas" width="960" height="480" class="display">
+    	
+
+    </canvas>
+
+ 	<button id = "buttonStart" type="button"> START
+    	</button>
+
+<script>
+    // Here it doesn't matter how we hide the text,
+    // could also use style.display:
+
+      document.getElementById('buttonStart').onclick = function() {
+     // document.getElementById('myCanvas').hidden = false;
+      Scene.start();
+    }
+
+
+  </script>
+
+
+</div>
+
+</body>
+</html>
